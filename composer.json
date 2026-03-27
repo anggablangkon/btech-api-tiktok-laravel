@@ -1,0 +1,26 @@
+{
+    "name": "btech-api/tiktok-laravel",
+    "description": "TikTok Shop API wrapper for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "BtechApi\\TiktokLaravel\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^10.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BtechApi\\TiktokLaravel\\TikTokShopServiceProvider"
+            ],
+            "aliases": {
+                "TikTokShop": "BtechApi\\TiktokLaravel\\TikTokShopFacade"
+            }
+        }
+    }
+}
